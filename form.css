@@ -1,0 +1,301 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 128px;
+    left: 81%;
+    right: 32px;
+}
+
+
+.form__titulo {
+    color: #fff;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: .3rem;
+    line-height: 18px;
+    text-transform: uppercase;
+    padding-bottom: 16px;
+}
+
+.form__input--nome {
+    font-family: Inter;
+    background: rgba(255, 255, 255, 0.16);
+    border: none;
+    border-radius: 8px;
+    height: 56px;
+    width: 220px;
+    color: #fff;
+    padding-left: 14px;
+    margin-bottom: 16px;
+    outline:none;
+}
+
+.form__input--nome:hover {
+    background: rgba(255, 255, 255, 0.24);
+    transition: all 0.1s linear;
+}
+
+.form__input--descricao {
+    font-size: 14px;
+    font-family: Inter;
+    background: rgba(255, 255, 255, 0.16);
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    padding-left: 14px;
+    padding-top: 16px;
+    margin-bottom: 40px;
+    height: 56px;
+    width: 220px;
+}
+
+.form__input--descricao:hover {
+    background: rgba(255, 255, 255, 0.24);
+    transition: all 0.1s linear;
+}
+
+.form__select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(./Vector\ 1.svg) no-repeat rgba(255, 255, 255, 0.16);  
+    background-position: 212px center;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-family: Inter;
+    height: 56px;
+    padding-left: 14px;
+    width: 235px;
+    margin-bottom: 16px;
+}
+
+.form__select:hover { 
+    background: url(./Vector\ 1.svg) no-repeat rgba(255, 255, 255, 0.24);
+    background-position: 212px center;
+    transition: all 0.1s linear;
+}
+
+.form_opcoes {
+    background-color: #41536a;
+}
+
+.form__borda {
+    border: 1px solid #fff;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+    width: 235px;
+    height: 56px;
+    margin-bottom: 32px;
+}
+
+.form__color--cyan {
+    background-color: #6BD1FF;
+    margin: 8px;
+    margin-right: 0;
+    width: 30px;
+    height: 40px;
+    border-radius: 4px;
+}
+
+.form__color--verde {
+    background-color: #9AFF6B;
+    margin: 8px;
+    margin-right: 0;
+    width: 30px;
+    height: 40px;
+    border-radius: 4px;
+}
+
+.form__color--roxo {
+    background-color: #6B83FF;
+    margin: 8px;
+    margin-right: 0;
+    width: 30px;
+    height: 40px;
+    border-radius: 4px;
+}
+
+.form__color--laranja {
+    background-color: #FFC46B;
+    margin: 8px;
+    margin-right: 0;
+    width: 30px;
+    height: 40px;
+    border-radius: 4px;
+}
+
+.form__color--rosa {
+    background-color: #FF6BCD;
+    margin: 8px;
+    margin-right: 0;
+    width: 30px;
+    height: 40px;
+    border-radius: 4px;
+}
+
+.form__color--vermelho {
+    background-color: #FF6961;
+    margin: 8px;
+    width: 30px;
+    height: 40px;
+    border-radius: 4px;
+}
+
+.form__button {
+    background-color: #5081FB;
+    border: none;
+    border-radius: 8px;
+    color: #051D3B;
+    font-family: Inter;
+    height: 56px;
+    width: 235px;
+    margin-bottom: 3rem;
+}
+
+.form__button:hover {
+    background-color: #7BA4FC;
+    cursor: pointer;
+}
+
+.form__button:active {
+    border: 4px solid #5081FB;
+}
+
+@media screen and (max-width: 1320px) {
+    .form {
+        left: 5%;
+        top: 620px;
+    }
+
+    .form__input--nome, .form__input--descricao {
+        width: 97%; 
+    }
+
+    fieldset {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .form__select {
+        margin-right: 3%;
+        background-position: 97% center;
+    }
+
+    .form__select:hover {
+        background-position: 97% center; 
+    }
+
+    .form__select, .form__borda {
+        width: 48%;
+    }
+    
+    .form__color {
+        width: 95%;
+    }
+
+    .form__button {
+        width: 100%;
+    }
+
+    .form__color--cyan, .form__color--verde, .form__color--roxo, .form__color--laranja, .form__color--rosa, .form__color--vermelho {
+        width: 5.5rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .form {
+        width: 87%;
+    }
+
+    fieldset {
+        display: flex;
+        flex-wrap: wrap;
+        width: 102%;
+    }
+
+    .form__select {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .form__borda {
+        width: 100%;
+    }
+
+    .form__color {
+        width: 95%;
+    }
+
+    .form__input--nome, .form__input--descricao {
+        width: 100%; 
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .form__color--cyan, .form__color--verde, .form__color--roxo, .form__color--laranja, .form__color--rosa, .form__color--vermelho {
+        width: 4.9rem;
+    }
+}
+
+@media screen and (max-width: 1174px) {
+    .form__color--cyan, .form__color--verde, .form__color--roxo, .form__color--laranja, .form__color--rosa, .form__color--vermelho {
+        width: 4.4rem;
+    }
+}
+
+@media screen and (max-width: 1079px) {
+    .form__color--cyan, .form__color--verde, .form__color--roxo, .form__color--laranja, .form__color--rosa, .form__color--vermelho {
+        width: 4rem;
+    }
+}
+
+@media screen and (max-width: 989px) {
+    .form__color--cyan, .form__color--verde, .form__color--roxo, .form__color--laranja, .form__color--rosa, .form__color--vermelho {
+        width: 3.7rem;
+    }
+}
+
+@media screen and (max-width: 924px) {
+    .form__color--cyan, .form__color--verde, .form__color--roxo, .form__color--laranja, .form__color--rosa, .form__color--vermelho {
+        width: 3.4rem;
+    }
+}
+
+@media screen and (max-width: 864px) {
+    .form__color--cyan, .form__color--verde, .form__color--roxo, .form__color--laranja, .form__color--rosa, .form__color--vermelho {
+        width: 3rem;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .form__color--cyan, .form__color--verde, .form__color--roxo, .form__color--laranja, .form__color--rosa, .form__color--vermelho {
+        margin-left: 4px;
+        width: 6.4rem;
+    }
+}
+
+@media screen and (max-width: 699px) {
+    .form__color--cyan, .form__color--verde, .form__color--roxo, .form__color--laranja, .form__color--rosa, .form__color--vermelho {
+        margin-left: 4px;
+        width: 4rem;
+    }
+}
+
+@media screen and (max-width: 449px) {
+    .form__color--cyan, .form__color--verde, .form__color--roxo, .form__color--laranja, .form__color--rosa, .form__color--vermelho {
+        margin-left: 4px;
+        width: 3rem;
+    }
+}
+
+@media screen and (max-width: 355px) {
+    .form__color--cyan, .form__color--verde, .form__color--roxo, .form__color--laranja, .form__color--rosa, .form__color--vermelho {
+        margin-left: 4px;
+        width: 2.5rem;
+    }
+}

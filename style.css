@@ -1,0 +1,11 @@
+body {
+    background-color: #051d3b;
+}
+
+a {
+    text-decoration: none;
+}
+
+.invisivel {
+    display: none;
+}

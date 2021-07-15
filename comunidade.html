@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunidade | AluraDev</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"> 
+    <link href="./reset.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+    <link href="./header.css" rel="stylesheet">
+    <link href="./menu.css" rel="stylesheet">
+    <link href="./cards.css" rel="stylesheet">
+</head>
+<body>
+        <header>
+            <div class="container">
+                <button class="menu-abrir"></button>
+                <button class="menu-fechar"></button>
+                <h1 class="logo__site"><a href="index.html"><img src="./Logo.svg" alt="Logo Alura Dev"></a></h1>
+                <nav class="barra-nav menu"> 
+                    <h2 class="menu__titulo">menu</h2>
+                    <ul class="menu-principal">
+                        <li>
+                            <a class="menu__item-3" href="index.html">
+                                <img src="./Icon_editor.svg" alt="Icone Editar código">
+                                <p class="menu__nome">Editor de código</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menu__item-4" href="comunidade.html">
+                                <img src="./Icon_comunidade.svg" alt="Icone Editar código">
+                                <p class="menu__nome">Comunidade</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <a class="usuario" href="#">
+                        <img src="./Photo.png" alt="Foto usuário">
+                        <p class="usuario__perfil">Harry</p>
+                    </a>
+                </nav>
+            </div>
+        </header>
+        <button class="busca-abrir"></button>
+        <button class="busca-fechar"></button>
+            <div class="busca__site">
+                <input id="enter" type="text" class="barra__pesquisa" placeholder="Busque por código">
+            </div>
+        <ul class="sessao__cards">
+            <li id='chama' class="cards"><a href="#">
+                <div class="card__bg">  
+                    <div class="card__codigo"><div class="card__estilo"></div></div>  
+                </div>
+                <div id="list" class="card">
+                    <h4 id="nomeCards" class="card__titulo">Esse é o título do projeto</h4>
+                    <p class="card__descricao">Essa é a descrição do projeto</p>
+                </div>
+                <div class="card__info">
+                    <span class="card__comentarios">9</span>
+                    <span class="card__curtidas">18</span>
+                    <span class="card__autor">@Harry</span>
+                </div>
+            </a></li>
+            <li id='chama' class="cards"><a href="#">             
+                <div class="card__bg">  
+                <div class="card__codigo"><div class="card__estilo"></div></div>  
+                </div>
+                <div id="list" class="card">
+                    <h4 id="nomeCards" class="card__titulo">Esse é o título do projeto</h4>
+                    <p class="card__descricao">Essa é a descrição do projeto</p>
+                </div>
+                <div class="card__info">
+                    <span class="card__comentarios">9</span>
+                    <span class="card__curtidas">18</span>
+                    <span class="card__autor">@Harry</span>
+                </div>
+            </a></li>
+            <li id='chama' class="cards"><a href="#">            
+                <div class="card__bg">  
+                <div class="card__codigo"><div class="card__estilo"></div></div>  
+                </div>
+                <div id="list" class="card">
+                    <h4 id="nomeCards" class="card__titulo">Esse é o título do projeto</h4>
+                    <p class="card__descricao">Essa é a descrição do projeto</p>
+                </div>
+                <div class="card__info">
+                    <span class="card__comentarios">9</span>
+                    <span class="card__curtidas">18</span>
+                    <span class="card__autor">@Harry</span>
+                </div>
+            </a></li>
+            <li id='chama' class="cards"><a href="#">             
+                <div class="card__bg">  
+                <div class="card__codigo"><div class="card__estilo"></div></div>  
+                </div>
+                <div id="list" class="card">
+                    <h4 id="nomeCards" class="card__titulo">Esse é o título do projeto</h4>
+                    <p class="card__descricao">Essa é a descrição do projeto</p>
+                </div>
+                <div class="card__info">
+                    <span class="card__comentarios">9</span>
+                    <span class="card__curtidas">18</span>
+                    <span class="card__autor">@Harry</span>
+                </div>
+            </a></li>
+        </ul>
+    </main>
+    <script src="./menu.js"></script>
+    <script src="./busca.js"></script>
+    <script src="./pesquisa.js"></script>
+</body>
+</html>

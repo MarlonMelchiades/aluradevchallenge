@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor de codigo | AluraDev</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"> 
+    <link href="./reset.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+    <link href="./header.css" rel="stylesheet">
+    <link href="./menu.css" rel="stylesheet">
+    <link href="./main.css" rel="stylesheet">
+    <link href="./form.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <header>
+            <div class="container">
+                <button class="menu-abrir"></button>
+                <button class="menu-fechar"></button>
+                <h1 class="logo__site"><a href="index.html"><img src="./Logo.svg" alt="Logo Alura Dev"></a></h1>
+                <nav class="barra-nav menu"> 
+                    <h2 class="menu__titulo">menu</h2>
+                    <ul class="menu-principal">
+                        <li>
+                            <a class="menu__item-1" href="index.html">
+                                <img src="./Icon_editor.svg" alt="Icone Editar código">
+                                <p class="menu__nome">Editor de código</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menu__item-2" href="comunidade.html">
+                                <img src="./Icon_comunidade.svg" alt="Icone Editar código">
+                                <p class="menu__nome">Comunidade</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <a class="usuario" href="#">
+                        <img src="./Photo.png" alt="Foto usuário">
+                        <p class="usuario__perfil">Harry</p>
+                    </a>
+                </nav>
+            </div>
+        </header>
+        <button class="busca-abrir"></button>
+        <button class="busca-fechar"></button>
+            <div class="busca__site">
+                <input type="text" class="barra__pesquisa" placeholder="Busque por algo">
+            </div>
+    <section class="container__main">
+        <section class="container__codigo">
+            <div class="bg__codigo">
+                <div class="codigo__estilo"></div>
+                <code class="input__codigo hljs" contenteditable="true" aria-label="editor"></code>
+            </div>
+            <button class="codigo__button">Vizualizar com o highlight</button>
+        </section>
+        <section class="form">
+            <form method="POST">
+                <h3 class="form__titulo">Seu projeto</h3>
+                <input class="form__input--nome" placeholder="Nome do seu projeto">
+                <textarea class="form__input--descricao" placeholder="Descrição do seu projeto"></textarea>
+            </form>
+            <fieldset>
+                <legend class="form__titulo">Personalização</legend>
+                <select class="form__select">
+                    <option class="form_opcoes">HTML</option>
+                    <option class="form_opcoes">CSS</option>
+                    <option class="form_opcoes">JavaScript</option>
+                </select>
+                <div class="form__borda">
+                    <a href="#"><div class="form__color--cyan"></div></a>
+                    <a href="#"><div class="form__color--verde"></div></a>
+                    <a href="#"><div class="form__color--roxo"></div></a>
+                    <a href="#"><div class="form__color--laranja"></div></a>
+                    <a href="#"><div class="form__color--rosa"></div></a>
+                    <a href="#"><div class="form__color--vermelho"></div></a>
+                </div>
+            </fieldset>
+            <input type='submit' class="form__button" value="Salvar projeto">
+        </section>
+    </section>
+    </main>
+    <script src="./menu.js"></script>
+    <script src="./busca.js"></script>
+    <script src="./bgColor.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <script src="./highlight.js"></script>
+</body>
+</html>
